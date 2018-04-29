@@ -1,0 +1,64 @@
+﻿= DIY IOT Lab  -- Penguicon 2018   
+
+Author    Dave Putz <dwputz@gmail.com>
+
+Author    Connie Sieh <cjsieh@gmail.com>
+
+*Your  Station Name ____________*
+
+include::diy_iot_lab-infrastructure.txt[]
+
+<<<
+== DIY IOT Lab Outline 
+
+//[horizontal]
+
+.ESP8266 Arduino IDE , sensor,  Data Broker and Web Server Basics
+Lab 1 :: Familiarize yourself with the Arduino IDE, compiling, and uploading a program to the ESP8266
+Lab 2 :: Program the ESP8266 to gather and report DHT11 data from a sensor
+Lab 3 :: Program the ESP8266 to publish to a MQTT Broker
+Lab 4 :: Program the ESP8266 to publish DHT11 Temperature sensor data to a MQTT Broker
+Lab 5 :: Program the ESP8266 to be a Web Server 
+Lab 6 :: Program the ESP8266 to be a Access Point and a Web Server 
+Lab 7 :: Program the ESP8266 to display DHT11 sensor data via a local web server as a Access Point
+
+.Optional labs if time permits
+.Data Flow with Node-RED
+Lab 8 :: Familiarize yourself with Node-RED
+Lab 9 :: Setup ESP8266 to publish to MQTT Broker, and configure a Node-RED flow to subscribe to MQTT and send email 
+
+.ESP8266 No/Little Programming Frameworks 
+Lab 10 :: Upload and configure ESPeasy to send DHT11 sensor data to MQTT Broker 
+
+.Final Step
+LAB 11 :: Configure a Node-Red flow to subscribe to a MQTT broker and publish to the cloud
+
+.Which labs go with each track
+[width="50%",options="header"]
+|==============================================
+| From the beginning | No Programming  | Advanced
+| Lab 1 | Lab 1 | Lab 1
+| Lab 2 | Lab 10 | Lab 4
+| Lab 3 | Lab 8 | Lab 11
+| Lab 4 | Lab 9 |
+| Lab 5 | Lab 11 |
+| Lab 6 |  |
+| Lab 7 |  |
+| Lab 8 |  |
+| Lab 9 |  |
+| Lab 11 |  |
+|==============================================
+
+include::diy_iot_lab-1.txt[]
+include::diy_iot_lab-2.txt[]
+include::diy_iot_lab-3.txt[]
+include::diy_iot_lab-4.txt[]
+include::diy_iot_lab-5.txt[]
+include::diy_iot_lab-6.txt[]
+include::diy_iot_lab-7.txt[]
+include::diy_iot_lab-8.txt[]
+include::diy_iot_lab-9.txt[]
+include::diy_iot_lab-10.txt[]
+include::diy_iot_lab-given.txt[]
+
+// vim: set syntax=asciidoc:

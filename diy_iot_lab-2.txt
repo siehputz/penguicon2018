@@ -1,0 +1,76 @@
+﻿<<<
+== LAB 2 :: DHT11(Temperature and Humidity) Sensor
+
+. Load the example program for a DHT sensor. 
+** Click on 'File->Examples->DHT sensor library->DHTtester'
+.  uncomment(remove the //) on the  
+** define line for DHTTYPE DHT11  
+
+[width="50%", cols="m"]
+|==============================================
+| //#define DHTTYPE DHT11
+|==============================================
+
+** to
+
+[width="50%", cols="m"]
+|==============================================
+|#define DHTTYPE DHT11
+|==============================================
+
+[start=3]
+.  comment(Insert //) on the 
+** define line for DHTTYPE for DHT22
+
+[width="50%", cols="m"]
+|==============================================
+|#define DHTTYPE DHT22
+|==============================================
+
+** to
+
+[width="50%", cols="m"]
+|==============================================
+| //#define DHTTYPE DHT22
+|==============================================
+
+TIP: It is a good programming practice to use defined values for pin numbers rather than actual numbers
+ 
+[start=4]
+. change  
+
+[width="50%", cols="m"]
+|==============================================
+|#define DHTPIN 2
+|
+|==============================================
+* to
+
+[width="50%", cols="m"]
+|==============================================
+|#define DHTPIN D5
+|
+|==============================================
+NOTE: The DHT11 sensor is connected to GPIO(General Purpuse IO) pin D5
+
+[start=5]
+. Because we are using a baud rate of 115200, you need to change
+
+[width="50%", cols="m"]
+|==============================================
+|Serial.begin(9600);
+|
+|==============================================
+* to
+
+[width="50%", cols="m"]
+|==============================================
+|Serial.begin(115200);
+|
+|==============================================
+[start=6]
+.  Compile and upload the sketch(program).
+.  Open the serial monitor window by clicking on 'Tools->Serial Monitor'.
+**  You should see the temperature and humidity readings being displayed. Note that the Serial.print() functions in your program will always display to this monitor window.
+.  Try holding the sensor in your hand and/or blowing on it to see the readings change. Be careful not to detach any wires when doing this.
+. Click on 'File->Save As'   to save this version
