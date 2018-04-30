@@ -30,11 +30,13 @@ ls /dev/ttyUSB*
 *** Firmware to upload
 **** 0 ESPEasy_R147_4096.bin
 
-[source,bash]
---------------------
-cd Downloads/images/esp8266-frameworks/espeasy
-./espeasyflash.sh
---------------------
+
+[width="100%", cols="m", grid="none"]
+|=====================================================
+|cd diyiot/Downloads/images/esp8266-frameworks/espeasy
+|./espeasyflash.sh
+|=====================================================
+
 
 [start=6]
 . After flash is done 
