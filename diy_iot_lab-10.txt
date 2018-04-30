@@ -28,11 +28,11 @@ NOTE: Precompiled image is located at http://www.letscontrolit.com/downloads/ESP
 ls /dev/ttyUSB*
 
 *** Firmware to upload
-**** 4 ESPEasy_R147_4096.bin
+**** 0 ESPEasy_R147_4096.bin
 
 [source,bash]
 --------------------
-cd Downloads/arduinoimages/esp8266-frameworks/espeasy
+cd Downloads/images/esp8266-frameworks/espeasy
 ./espeasyflash.sh
 --------------------
 
