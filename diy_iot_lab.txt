@@ -59,6 +59,7 @@ include::diy_iot_lab-7.txt[]
 include::diy_iot_lab-8.txt[]
 include::diy_iot_lab-9.txt[]
 include::diy_iot_lab-10.txt[]
+include::diy_iot_lab-11.txt[]
 include::diy_iot_lab-given.txt[]
 
 // vim: set syntax=asciidoc:
