@@ -4,19 +4,18 @@
 * SOFTWARE
 ** The Arduino IDE has been installed on the lab system. 
 *** This can be found online at https://www.arduino.cc/en/main/software
-**** Version 1.8.1 was installed
+**** Version 1.8.5 was installed
 ** The Arduino IDE has been configured to pick up the ESP8266 board definition by adding 'http://arduino.esp8266.com/stable/package_esp8266com_index.json' to 'File->Preferences->Settings' “Additional Boards Manager URLS”.
-*** http://esp8266.github.io/Arduino/versions/2.3.0/doc/installing.html
+*** http://arduino-esp8266.readthedocs.io/en/latest/installing.html#boards-manager 
 ** Arduino libraries and ESP8266 specific libraries have been installed
 *** In the Arduino IDE, Click on 'Sketch->Include Libraries->Manage Libraries' 
-**** http://esp8266.github.io/Arduino/versions/2.3.0/doc/libraries.html
 **** The following libraries have been installed:
 ***** ESP8266
 ***** Adafruit MQTT Library
 ***** DHT Sensor library by Adafruit
 ***** Adafruit Unified Sensor by Adafruit (dependency of DHT Sensor)
 *** ESP8266 Arduino reference doc
-**** http://esp8266.github.io/Arduino/versions/2.3.0/
+**** http://arduino-esp8266.readthedocs.io/en/latest/
 ** The mosquitto MQTT broker has been installed. This can be found online at https://mosquitto.org/download/ or by using “apt-get mosquitto”.
 ** The Node-RED flow manager software has been installed. Instructions on how to do this can be found at https://nodered.org/docs/getting-started/installation .
 * HARDWARE
