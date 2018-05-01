@@ -4,6 +4,7 @@
 === Install and Configure ESPeasy to send DHT11 sensor data to a MQTT broker 
  
 NOTE: The downloads in steps 1-3 have been done for you - these steps are included for your reference.
+
 . Look at https://www.letscontrolit.com/wiki/index.php/ESPEasy#Get_started
 
 . Upload the precompiled ESPeasy firmware to esp8266 
