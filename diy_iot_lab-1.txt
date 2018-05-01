@@ -5,7 +5,7 @@
 ** user: arduino  
 ** password: arduino
 . Plug in the ESP8266 using the USB cable
-. Click on the Arduino IDE icon to bring up the IDE, might be under 
+. Double click on the Arduino IDE icon to bring up the IDE, might be under 
 ** 'Activities->Show Programs'
 . Click on 'Tools->Board' and pick
 **  “NodeMCU 1.0 (ESP 12-E Module)”
@@ -24,7 +24,7 @@
 ** When the upload completes, the ESP8266 will start running the program. You should see the Red or Blue(near usb connector) LED turning off and on with a pause of one second between changes.
 . Edit the program to change the timing of the blinks. This will be done with the two lines that currently read 
 
-[width="60%",cols="m"]
+[width="60%",cols="m",grid="none"]
 |==============================================
 |delay(1000);  
 |==============================================
