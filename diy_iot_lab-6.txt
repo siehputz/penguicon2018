@@ -8,7 +8,7 @@
 [start=3]
 . Insert  
 ** Since the default IPADDRESS is 192.168.4.1 you will need to change that since there are many EPS8266 in the lab.  
-** where xx is replaced by your station number , just to make it unique
+**  Insert the following 3 lines; where xx is replaced by your station number , just to make it unique
 
 [width="50%", cols="m", grid="none"]
 |==============================================
@@ -42,5 +42,6 @@
 * You should see a screen back that contains just a hello message 
 
 [start=6]
-. Click on 'File->Save As'   to save this version
+. Click on 'File->Save As' and save it as `lab6' in your Documents directory
+
 // vim: set syntax=asciidoc:

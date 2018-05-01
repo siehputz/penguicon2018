@@ -738,8 +738,9 @@ asciidoc.install();
 <div class="sectionbody">
 <div class="paragraph"><p>Author    Dave Putz &lt;<a href="mailto:dwputz@gmail.com">dwputz@gmail.com</a>&gt;</p></div>
 <div class="paragraph"><p>Author    Connie Sieh &lt;<a href="mailto:cjsieh@gmail.com">cjsieh@gmail.com</a>&gt;</p></div>
+<div class="paragraph"><p>License
+        <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></p></div>
 <div class="paragraph"><p><strong>Your  Station Name <em><em></em></em><em><em></em></em></strong></p></div>
-<div style="page-break-after:always"></div>
 </div>
 </div>
 <div class="sect1">
@@ -843,10 +844,10 @@ Configure a Node-Red flow to subscribe to a MQTT broker and publish to the cloud
 </dl></div>
 <div class="tableblock">
 <table rules="all"
-width="90%"
+width="50%"
 frame="border"
 cellspacing="0" cellpadding="4">
-<caption class="title">Table 1. WHich labs go with each track</caption>
+<caption class="title">Table 1. Which labs go with each track</caption>
 <col width="33%" />
 <col width="33%" />
 <col width="33%" />
@@ -854,7 +855,7 @@ cellspacing="0" cellpadding="4">
 <tr>
 <th align="left" valign="top"> From the beginning </th>
 <th align="left" valign="top"> No Programming  </th>
-<th align="left" valign="top"> Advanced</th>
+<th align="left" valign="top"> Been Here Before</th>
 </tr>
 </thead>
 <tbody>
@@ -871,12 +872,12 @@ cellspacing="0" cellpadding="4">
 <tr>
 <td align="left" valign="top"><p class="table">Lab 3</p></td>
 <td align="left" valign="top"><p class="table">Lab 8</p></td>
-<td align="left" valign="top"><p class="table">Lab 11</p></td>
+<td align="left" valign="top"><p class="table">Lab 9 (With options)</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Lab 4</p></td>
 <td align="left" valign="top"><p class="table">Lab 9</p></td>
-<td align="left" valign="top"><p class="table"></p></td>
+<td align="left" valign="top"><p class="table">Lab 11</p></td>
 </tr>
 <tr>
 <td align="left" valign="top"><p class="table">Lab 5</p></td>
@@ -912,6 +913,7 @@ cellspacing="0" cellpadding="4">
 </table>
 </div>
 <div style="page-break-after:always"></div>
+<div style="page-break-after:always"></div>
 </div>
 </div>
 <div class="sect1">
@@ -942,7 +944,7 @@ Plug in the ESP8266 using the USB cable
 </li>
 <li>
 <p>
-Click on the Arduino IDE icon to bring up the IDE, might be under
+Double click on the Arduino IDE icon to bring up the IDE, might be under
 </p>
 <div class="ulist"><ul>
 <li>
@@ -1043,6 +1045,21 @@ When the upload completes, the ESP8266 will start running the program. You shoul
 <p>
 Edit the program to change the timing of the blinks. This will be done with the two lines that currently read
 </p>
+</li>
+</ol></div>
+<div class="tableblock">
+<table rules="none"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>delay(1000);</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1050,14 +1067,6 @@ change it to whatever you like.
 </p>
 </li>
 </ul></div>
-</li>
-</ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-weight: bold"><span style="color: #000000">delay</span></span><span style="color: #990000">(</span><span style="color: #993399">1000</span><span style="color: #990000">);</span></tt></pre></div></div>
 <div class="olist arabic"><ol class="arabic" start="10">
 <li>
 <p>
@@ -1071,6 +1080,7 @@ Verify that the LED blink rate on your ESP8266 has successfully changed.
 </p>
 </li>
 </ol></div>
+<div style="page-break-after:always"></div>
 <div style="page-break-after:always"></div>
 </div>
 </div>
@@ -1103,12 +1113,19 @@ define line for DHTTYPE DHT11
 </ul></div>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-style: italic"><span style="color: #9A1900">//#define DHTTYPE DHT11</span></span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>//#define DHTTYPE DHT11</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1116,12 +1133,19 @@ to
 </p>
 </li>
 </ul></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-weight: bold"><span style="color: #000080">#define</span></span> DHTTYPE DHT11</tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>#define DHTTYPE DHT11</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="olist arabic"><ol class="arabic" start="3">
 <li>
 <p>
@@ -1136,12 +1160,19 @@ define line for DHTTYPE for DHT22
 </ul></div>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-weight: bold"><span style="color: #000080">#define</span></span> DHTTYPE DHT22</tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>#define DHTTYPE DHT22</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1149,12 +1180,19 @@ to
 </p>
 </li>
 </ul></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-style: italic"><span style="color: #9A1900">//#define DHTTYPE DHT22</span></span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>//#define DHTTYPE DHT22</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="admonitionblock">
 <table><tr>
 <td class="icon">
@@ -1170,12 +1208,19 @@ change
 </p>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-weight: bold"><span style="color: #000080">#define</span></span> DHTPIN <span style="color: #993399">2</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>#define DHTPIN 2</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1183,12 +1228,19 @@ to
 </p>
 </li>
 </ul></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-weight: bold"><span style="color: #000080">#define</span></span> DHTPIN D5</tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>#define DHTPIN D5</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="admonitionblock">
 <table><tr>
 <td class="icon">
@@ -1204,12 +1256,19 @@ Because we are using a baud rate of 115200, you need to change
 </p>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>Serial<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">begin</span></span><span style="color: #990000">(</span><span style="color: #993399">9600</span><span style="color: #990000">);</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>Serial.begin(9600);</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1217,12 +1276,19 @@ to
 </p>
 </li>
 </ul></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>Serial<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">begin</span></span><span style="color: #990000">(</span><span style="color: #993399">115200</span><span style="color: #990000">);</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>Serial.begin(115200);</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="olist arabic"><ol class="arabic" start="6">
 <li>
 <p>
@@ -1248,7 +1314,8 @@ Try holding the sensor in your hand and/or blowing on it to see the readings cha
 </li>
 <li>
 <p>
-Click on <em>File&#8594;Save As</em>   to save this version
+Click on <em>File&#8594;Save As</em> and save it as &#8216;lab2&#8217; in your Documents folder to save this version
+&lt;&lt;&lt;
 &lt;&lt;&lt;
 </p>
 </li>
@@ -1256,7 +1323,7 @@ Click on <em>File&#8594;Save As</em>   to save this version
 </div>
 </div>
 <div class="sect1">
-<h2 id="_lab_3_mqtt">LAB 3 ::  MQTT</h2>
+<h2 id="_lab_3_mqtt_with_an_incremented_number_for_testing">LAB 3 ::  MQTT with an incremented number for testing</h2>
 <div class="sectionbody">
 <div class="olist arabic"><ol class="arabic">
 <li>
@@ -1354,12 +1421,19 @@ Change the literal from “feeds/photocell” to “feeds/temp”
 </ul></div>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="color: #008080">Adafruit_MQTT_Publish</span> photocell <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">Adafruit_MQTT_Publish</span></span><span style="color: #990000">(&amp;</span>mqtt<span style="color: #990000">,</span> AIO_USERNAME <span style="color: #FF0000">"/feeds/photocell"</span><span style="color: #990000">);</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>Adafruit_MQTT_Publish photocell = Adafruit_MQTT_Publish(&amp;mqtt, AIO_USERNAME "/feeds/photocell");</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1367,12 +1441,19 @@ to
 </p>
 </li>
 </ul></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="color: #008080">Adafruit_MQTT_Publish</span> temp <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">Adafruit_MQTT_Publish</span></span><span style="color: #990000">(&amp;</span>mqtt<span style="color: #990000">,</span> AIO_USERNAME <span style="color: #FF0000">"/feeds/temp"</span><span style="color: #990000">);</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>Adafruit_MQTT_Publish temp = Adafruit_MQTT_Publish(&amp;mqtt, AIO_USERNAME "/feeds/temp");</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="olist arabic"><ol class="arabic">
 <li>
 <p>
@@ -1380,12 +1461,19 @@ Change line 107 to call "temp.publish" instead of "photocell.publish" since we c
 </p>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-weight: bold"><span style="color: #0000FF">if</span></span> <span style="color: #990000">(!</span> photocell<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">publish</span></span><span style="color: #990000">(</span>x<span style="color: #990000">++))</span> <span style="color: #FF0000">{</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>if (! photocell.publish(x++)) {</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1393,12 +1481,19 @@ to
 </p>
 </li>
 </ul></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-weight: bold"><span style="color: #0000FF">if</span></span> <span style="color: #990000">(!</span> temp<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">publish</span></span><span style="color: #990000">(</span>x<span style="color: #990000">++))</span> <span style="color: #FF0000">{</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="all"
+width="60%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>if (! temp.publish(x++)) {</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="olist arabic"><ol class="arabic">
 <li>
 <p>
@@ -1474,6 +1569,7 @@ where xx is your station number
  -t '#'        -- &lt;topic&gt; '#' means all topics</code></pre>
 </div></div>
 <div style="page-break-after:always"></div>
+<div style="page-break-after:always"></div>
 </div>
 </div>
 <div class="sect1">
@@ -1493,15 +1589,28 @@ Definitions
 </ul></div>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-weight: bold"><span style="color: #000080">#include</span></span> <span style="color: #FF0000">"DHT.h"</span>
-<span style="font-weight: bold"><span style="color: #000080">#define</span></span> DHTPIN D5
-<span style="font-weight: bold"><span style="color: #000080">#define</span></span> DHTTYPE DHT11
-<span style="color: #008080">DHT</span> <span style="font-weight: bold"><span style="color: #000000">dht</span></span><span style="color: #990000">(</span>DHTPIN<span style="color: #990000">,</span> DHTTYPE<span style="color: #990000">);</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>#include "DHT.h"</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>#define DHTPIN D5</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>#define DHTTYPE DHT11</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>DHT dht(DHTPIN, DHTTYPE);</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1516,12 +1625,19 @@ Add to setup(); the following code
 </ul></div>
 </li>
 </ul></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>dht<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">begin</span></span><span style="color: #990000">();</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="all"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>dht.begin();</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1534,12 +1650,19 @@ Above the comment line in the loop() that follows
 </p>
 </li>
 </ul></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-style: italic"><span style="color: #9A1900">// Now we can publish stuff!”</span></span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="all"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>// Now we can publish stuff!”</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1547,16 +1670,31 @@ add the code from Lab 3 that reads the temperature from the DHT sensor
 </p>
 </li>
 </ul></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-style: italic"><span style="color: #9A1900">// Read temperature as Fahrenheit (isFahrenheit = true)</span></span>
-<span style="color: #009900">float</span> f <span style="color: #990000">=</span> dht<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">readTemperature</span></span><span style="color: #990000">(</span>true<span style="color: #990000">);</span>
-<span style="font-weight: bold"><span style="color: #0000FF">if</span></span> <span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #000000">isnan</span></span><span style="color: #990000">(</span>f<span style="color: #990000">))</span> <span style="color: #FF0000">{</span>
-    Serial<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">println</span></span><span style="color: #990000">(</span><span style="color: #FF0000">"Failed to read from DHT sensor!"</span><span style="color: #990000">);</span>
-  <span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>// Read temperature as Fahrenheit (isFahrenheit = true)</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>float f = dht.readTemperature(true);</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>if (isnan(f)) {</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>Serial.println("Failed to read from DHT sensor!");</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>}</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1569,12 +1707,19 @@ from
 </p>
 </li>
 </ul></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-weight: bold"><span style="color: #0000FF">if</span></span> <span style="color: #990000">(!</span> photocell<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">publish</span></span><span style="color: #990000">(</span>x<span style="color: #990000">++))</span> <span style="color: #FF0000">{</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="all"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>if (! photocell.publish(x++)) {</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1582,12 +1727,19 @@ to
 </p>
 </li>
 </ul></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-weight: bold"><span style="color: #0000FF">if</span></span> <span style="color: #990000">(!</span> temp<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">publish</span></span><span style="color: #990000">(</span>f<span style="color: #990000">))</span> <span style="color: #FF0000">{</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="all"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>if (! temp.publish(f)) {</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="olist arabic"><ol class="arabic" start="2">
 <li>
 <p>
@@ -1600,6 +1752,7 @@ Click on <em>File&#8594;Save As</em>   to save this version
 </p>
 </li>
 </ol></div>
+<div style="page-break-after:always"></div>
 <div style="page-break-after:always"></div>
 </div>
 </div>
@@ -1618,12 +1771,19 @@ Look at the code. Note in particular that the loop() function consists of only a
 </p>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>server<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">handleClient</span></span><span style="color: #990000">();</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>server.handleClient();</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="olist arabic"><ol class="arabic">
 <li>
 <p>
@@ -1682,12 +1842,19 @@ You should see a screen back that contains just a hello message. Note that this 
 </ul></div>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>server<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">on</span></span><span style="color: #990000">(</span><span style="color: #FF0000">"/"</span><span style="color: #990000">,</span> handleRoot<span style="color: #990000">);.</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>server.on("/", handleRoot);.</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="olist arabic"><ol class="arabic" start="6">
 <li>
 <p>
@@ -1695,6 +1862,7 @@ Click on <em>File&#8594;Save As</em>   to save this version
 </p>
 </li>
 </ol></div>
+<div style="page-break-after:always"></div>
 <div style="page-break-after:always"></div>
 </div>
 </div>
@@ -1744,14 +1912,25 @@ where xx is replaced by your station number , just to make it unique
 </ul></div>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="color: #008080">IPAddress</span> <span style="font-weight: bold"><span style="color: #000000">apIP</span></span><span style="color: #990000">(</span><span style="color: #993399">192</span><span style="color: #990000">,</span><span style="color: #993399">168</span><span style="color: #990000">,</span>xx<span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
-WiFi<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">mode</span></span><span style="color: #990000">(</span>WIFI_AP_STA<span style="color: #990000">);</span>
-WiFi<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">softAPConfig</span></span><span style="color: #990000">(</span>apIP<span style="color: #990000">,</span> apIP<span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">IPAddress</span></span><span style="color: #990000">(</span><span style="color: #993399">255</span><span style="color: #990000">,</span> <span style="color: #993399">255</span><span style="color: #990000">,</span> <span style="color: #993399">255</span><span style="color: #990000">,</span> <span style="color: #993399">0</span><span style="color: #990000">));</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>IPAddress apIP(192,168,xx,1);</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>WiFi.mode(WIFI_AP_STA);</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>WiFi.softAPConfig(apIP, apIP, IPAddress(255, 255, 255, 0));</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1759,12 +1938,19 @@ before
 </p>
 </li>
 </ul></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>WiFi<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">softAP</span></span><span style="color: #990000">(</span>ssid<span style="color: #990000">,</span> password<span style="color: #990000">);</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>WiFi.softAP(ssid, password);</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="ulist"><ul>
 <li>
 <p>
@@ -1772,15 +1958,28 @@ It should now look like
 </p>
 </li>
 </ul></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="color: #008080">IPAddress</span> <span style="font-weight: bold"><span style="color: #000000">apIP</span></span><span style="color: #990000">(</span><span style="color: #993399">192</span><span style="color: #990000">,</span><span style="color: #993399">168</span><span style="color: #990000">,</span>xx<span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
-WiFi<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">mode</span></span><span style="color: #990000">(</span>WIFI_AP_STA<span style="color: #990000">);</span>
-WiFi<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">softAPConfig</span></span><span style="color: #990000">(</span>apIP<span style="color: #990000">,</span> apIP<span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">IPAddress</span></span><span style="color: #990000">(</span><span style="color: #993399">255</span><span style="color: #990000">,</span> <span style="color: #993399">255</span><span style="color: #990000">,</span> <span style="color: #993399">255</span><span style="color: #990000">,</span> <span style="color: #993399">0</span><span style="color: #990000">));</span>
-WiFi<span style="color: #990000">,</span><span style="font-weight: bold"><span style="color: #000000">softAP</span></span><span style="color: #990000">(</span>ssid<span style="color: #990000">,</span>password<span style="color: #990000">);</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>IPAddress apIP(192,168,xx,1);</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>WiFi.mode(WIFI_AP_STA);</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>WiFi.softAPConfig(apIP, apIP, IPAddress(255, 255, 255, 0));</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>WiFi,softAP(ssid,password);</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="olist arabic"><ol class="arabic" start="3">
 <li>
 <p>
@@ -1816,6 +2015,7 @@ You should see a screen back that contains just a hello message
 Click on <em>File&#8594;Save As</em>   to save this version
 
 &lt;&lt;&lt;
+&lt;&lt;&lt;
 </p>
 </li>
 </ol></div>
@@ -1833,15 +2033,28 @@ Add the DHT definition lines
 </p>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-weight: bold"><span style="color: #000080">#include</span></span> <span style="color: #FF0000">"DHT.h"</span>
-<span style="font-weight: bold"><span style="color: #000080">#define</span></span> DHTPIN D5
-<span style="font-weight: bold"><span style="color: #000080">#define</span></span> DHTTYPE DHT11
-<span style="color: #008080">DHT</span> <span style="font-weight: bold"><span style="color: #000000">dht</span></span><span style="color: #990000">(</span>DHTPIN<span style="color: #990000">,</span> DHTTYPE<span style="color: #990000">);</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>#include "DHT.h"</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>#define DHTPIN D5</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>#define DHTTYPE DHT11</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>DHT dht(DHTPIN, DHTTYPE);</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="olist arabic"><ol class="arabic" start="2">
 <li>
 <p>
@@ -1849,12 +2062,19 @@ Add the DHT initalize to setup();
 </p>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>dht<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">begin</span></span><span style="color: #990000">();</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>dht.begin();</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="olist arabic"><ol class="arabic" start="3">
 <li>
 <p>
@@ -1862,15 +2082,28 @@ Add the code to read the DHT11 sensor to a new handleTemp() function
 </p>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="color: #009900">void</span> <span style="font-weight: bold"><span style="color: #000000">handleTemp</span></span><span style="color: #990000">()</span> <span style="color: #FF0000">{</span>
-  <span style="color: #009900">float</span> h <span style="color: #990000">=</span> dht<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">readHumidity</span></span><span style="color: #990000">();</span>
-  <span style="color: #009900">float</span> f <span style="color: #990000">=</span> dht<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">readTemperature</span></span><span style="color: #990000">(</span>true<span style="color: #990000">);</span>
-<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>void handleTemp() {</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>float h = dht.readHumidity();</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>float f = dht.readTemperature(true);</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>}</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="olist arabic"><ol class="arabic" start="4">
 <li>
 <p>
@@ -1885,22 +2118,49 @@ Add server.send() call to handleTemp() to send the data back to the client when 
 </ul></div>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="color: #009900">void</span> <span style="font-weight: bold"><span style="color: #000000">handleTemp</span></span><span style="color: #990000">()</span> <span style="color: #FF0000">{</span>
-  <span style="color: #008080">String</span> message <span style="color: #990000">=</span> <span style="color: #FF0000">""</span><span style="color: #990000">;</span>
-  <span style="color: #009900">float</span> h <span style="color: #990000">=</span> dht<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">readHumidity</span></span><span style="color: #990000">();</span>
-  <span style="color: #009900">float</span> f <span style="color: #990000">=</span> dht<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">readTemperature</span></span><span style="color: #990000">(</span>true<span style="color: #990000">);</span>
-  message <span style="color: #990000">=</span> <span style="color: #FF0000">"Temperature is : "</span><span style="color: #990000">;</span>
-  message <span style="color: #990000">+=</span> f<span style="color: #990000">;</span>
-  message <span style="color: #990000">+=</span> <span style="color: #FF0000">" Humidity is : "</span><span style="color: #990000">;</span>
-  message <span style="color: #990000">+=</span> h<span style="color: #990000">;</span>
-  message <span style="color: #990000">+=</span> <span style="color: #FF0000">"</span><span style="color: #CC33CC">\n</span><span style="color: #FF0000">"</span> <span style="color: #990000">;</span>
-  server<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">send</span></span><span style="color: #990000">(</span><span style="color: #993399">200</span><span style="color: #990000">,</span> <span style="color: #FF0000">"text/plain"</span><span style="color: #990000">,</span> message<span style="color: #990000">);</span>
-<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>void handleTemp() {</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>String message = "";</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>float h = dht.readHumidity();</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>float f = dht.readTemperature(true);</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>message = "Temperature is : ";</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>message += f;</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>message += " Humidity is : ";</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>message += h;</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>message += "\n" ;</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>server.send(200, "text/plain", message);</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>}</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="olist arabic"><ol class="arabic" start="5">
 <li>
 <p>
@@ -1908,13 +2168,22 @@ Call handleTemp in setup() after server.on("/", handleRoot) when user enters URL
 </p>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>server<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">on</span></span><span style="color: #990000">(</span><span style="color: #FF0000">"/"</span><span style="color: #990000">,</span> handleRoot<span style="color: #990000">);</span>
-server<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">on</span></span><span style="color: #990000">(</span><span style="color: #FF0000">"/temp"</span><span style="color: #990000">,</span> handleTemp<span style="color: #990000">);</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>server.on("/", handleRoot);</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>server.on("/temp", handleTemp);</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="olist arabic"><ol class="arabic" start="6">
 <li>
 <p>
@@ -1933,6 +2202,7 @@ Enter the IP address followed by “/temp” in the URL bar. This should return 
 </li>
 </ol></div>
 <div style="page-break-after:always"></div>
+<div style="page-break-after:always"></div>
 </div>
 </div>
 </div>
@@ -1940,7 +2210,7 @@ Enter the IP address followed by “/temp” in the URL bar. This should return 
 <h2 id="_lab_8_familiarize_yourself_with_node_red">LAB 8 :: Familiarize Yourself with Node-RED</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_create_a_basic_node_red_flow_and_see_how_to_connect_nodes">Create a basic Node-Red flow and see how to connect nodes</h3>
+<h3 id="_create_a_basic_node_red_flow_and_see_how_to_connect_nodes">Create a basic Node-RED flow and see how to connect nodes</h3>
 <div class="olist arabic"><ol class="arabic" start="1">
 <li>
 <p>
@@ -1949,7 +2219,7 @@ Open a browser on your lab system.
 </li>
 <li>
 <p>
-Enter “localhost:1880” in the URL bar. Note that 1880 is the
+Enter &#8216;localhost:1880&#8217; in the URL bar. Note that 1880 is the
 default port for Node-RED, and can be changed in the settings.js
 file.
 </p>
@@ -1963,47 +2233,46 @@ right.
 </li>
 <li>
 <p>
-Click and drag an “inject” input node onto the design screen.
+Click and drag an &#8216;inject&#8217; input node onto the design screen.
 </p>
 </li>
 <li>
 <p>
 Double clicking on the new node will bring up an edit window on
-the screen. For now, just change the name to “Time” and click
-“Done”.
+the screen. For now, just change the name to &#8216;Time&#8217; and click &#8216;Done&#8217;.
 </p>
 </li>
 <li>
 <p>
-Click and drag a “debug” output node onto the design screen.
+Click and drag a &#8216;debug&#8217; output node onto the design screen.
 </p>
 </li>
 <li>
 <p>
-Change its name to “Test”.
+Change its name to &#8216;Test&#8217;.
 </p>
 </li>
 <li>
 <p>
-Connect the two nodes by clicking on the right side of the “Time”
-node and dragging a line to the left side of the “Test” node.
+Connect the two nodes by clicking on the right side of the &#8216;Time&#8217;
+node and dragging a line to the left side of the &#8216;Test&#8217; node.
 </p>
 </li>
 <li>
 <p>
-Click on the “Deploy” button on the top right. Note that in
+Click on the &#8216;Deploy&#8217; button on the top right. Note that in
 Node-RED no changes take effect until they are deployed.
 </p>
 </li>
 <li>
 <p>
-Click on the debug tab on the right side to show the debug
+Click on the &#8216;debug&#8217; tab on the right side to show the debug
 screen.
 </p>
 </li>
 <li>
 <p>
-Click on the button on the left side of the “Time” node. This
+Click on the button on the left side of the &#8216;Time&#8217; node. This
 activates that node. Look at the debug window to see the
 timestamp displayed.
 </p>
@@ -2014,7 +2283,7 @@ timestamp displayed.
 <div class="olist arabic"><ol class="arabic" start="1">
 <li>
 <p>
-Click on the line between the two nodes, and hit “delete” on
+Click on the line between the two nodes, and hit &#8216;delete&#8217; on
 the keyboard to remove it.
 </p>
 </li>
@@ -2032,33 +2301,51 @@ window, and enter the following code:
 </p>
 </li>
 </ol></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>     <span style="font-style: italic"><span style="color: #9A1900">// Create a Date object from the payload</span></span>
-     <span style="color: #008080">var</span> date <span style="color: #990000">=</span> <span style="color: #008080">new</span> <span style="font-weight: bold"><span style="color: #000000">Date</span></span><span style="color: #990000">(</span>msg<span style="color: #990000">.</span>payload<span style="color: #990000">);</span>
-     <span style="font-style: italic"><span style="color: #9A1900">// Change the payload to be a formatted Date string</span></span>
-     msg<span style="color: #990000">.</span>payload <span style="color: #990000">=</span> date<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">toString</span></span><span style="color: #990000">();</span>
-     <span style="font-style: italic"><span style="color: #9A1900">// Return the message so it can be sent on</span></span>
-     <span style="font-weight: bold"><span style="color: #0000FF">return</span></span> msg<span style="color: #990000">;</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>// Create a Date object from the payload</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>var date = new Date(msg.payload);</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>// Change the payload to be a formatted Date string</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>msg.payload = date.toString();</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>// Return the message so it can be sent on</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>return msg;</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="olist arabic"><ol class="arabic" start="4">
 <li>
 <p>
-Click “Done”, and then connect the output of the “Time”
+Click &#8216;Done&#8217;, and then connect the output of the &#8216;Time&#8217;
 node to the input of the function node, and the output of the
-function node to the input of the “Test” node.
+function node to the input of the &#8216;Test&#8217; node.
 </p>
 </li>
 <li>
 <p>
 Deploy the flow, then click on the activate button on the
-“Time” node. You should now see a formatted date in the debug
+&#8216;Time&#8217; node. You should now see a formatted date in the debug
 window.
 </p>
 </li>
 </ol></div>
+<div style="page-break-after:always"></div>
 <div style="page-break-after:always"></div>
 </div>
 </div>
@@ -2070,8 +2357,39 @@ window.
 <div class="olist arabic"><ol class="arabic" start="1">
 <li>
 <p>
-Reload the MQTT sketch from Lab 3 into your ESP8266.
+If you are not using ESPEasy, reload the MQTT sketch from Lab 4 into your ESP8266. If you are using ESPEasy, just go to lab 2.
 </p>
+</li>
+<li>
+<p>
+To start Node-RED
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+In a terminal window type
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+node node_modules/node-red/red
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+Using a browser
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+go to "http://127.0.0.1:1880/" to navigate to the Node-RED screen
+</p>
+</li>
+</ul></div>
+</li>
+</ul></div>
 </li>
 <li>
 <p>
@@ -2080,42 +2398,49 @@ On your Node-RED screen, click on the “+” button on the top right of the des
 </li>
 <li>
 <p>
-Double-click on the flow name to bring up its edit window. Change the name to “MQTT-Test”. Note that this is also where you would delete a flow that you no longer want. Click “Done”.
+Double-click on the "flow name" to bring up its edit window. Change the name to “MQTT-Test”. Note that this is also where you would delete a flow that you no longer want. Click “Done”.
 </p>
 </li>
 <li>
 <p>
-Drag a mqtt node from the input list onto the design screen. Note that there is also a mqtt node in the output section, which we do not want to use here.
+Drag a "mqtt node" from the input list onto the workspace screen. Note that there is also a mqtt node in the output section, which we do not want to use here.
 </p>
 </li>
 <li>
 <p>
-Double-click on the mqtt node to bring up the edit window. Since your mosquitto broker and Node-RED are running on the same system, enter “localhost:1883” in the Server box.
+Double-click on the "mqtt node" to bring up the edit window.
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+Since your mosquitto broker and Node-RED are running on the same system, enter “localhost:1883” in the "Server box".
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+Enter the topic name you used from Lab 3 in the "Topic box".
 </p>
 </li>
 <li>
 <p>
-Enter the topic name you used from Lab 3 in the Topic box.
+Change the "QOS" from 2 to 0.
 </p>
 </li>
 <li>
 <p>
-Change the QOS from 2 to 0.
+Change the "name" to “MQTT subscribe” and hit “Done”.
 </p>
 </li>
 <li>
 <p>
-Change the name to “MQTT subscribe” and hit “Done”.
+Click and drag an "e-mail output node" from the “social” group. Note that you may have to scroll down to see this one. Also, make sure you get the output node (connector on the left) and not the input node (connector on the right).
 </p>
 </li>
 <li>
 <p>
-Click and drag an e-mail output node from the “social” group. Note that you may have to scroll down to see this one. Also, make sure you get the output node (connector on the left) and not the input node (connector on the right).
-</p>
-</li>
-<li>
-<p>
-Double-click the email node to bring up the edit window.
+Double-click the "email node" to bring up the edit window.
 </p>
 </li>
 <li>
@@ -2130,7 +2455,7 @@ Change the name to gmail-out, and click “Done”
 </li>
 <li>
 <p>
-Connect the two nodes, and deploy.
+Connect the two nodes, and DEPLOY.
 </p>
 </li>
 <li>
@@ -2144,16 +2469,30 @@ Log into your email account, and check for incoming messages. Note that you coul
 <div class="paragraph"><p>A)  Add a switch node to test on the message from the MQTT broker; and only email if it exceeds some value. Send all other values to a debug node.</p></div>
 <div class="paragraph"><p>B)  Add a function node to convert the temperature from what your are getting (either Fahrenheit or Celsius ) to the other scale.
    One possible function to do this</p></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt><span style="font-style: italic"><span style="color: #9A1900">// convert Celsius to Farenheit</span></span>
-<span style="color: #008080">var</span> newtemp <span style="color: #990000">=</span> <span style="color: #008080">new</span> <span style="color: #009900">int</span> <span style="color: #990000">(</span>msg<span style="color: #990000">.</span>payload<span style="color: #990000">);</span>
-msg<span style="color: #990000">.</span>payload<span style="color: #990000">=</span> <span style="color: #990000">(</span>newtemp <span style="color: #990000">*</span> <span style="color: #993399">1.8</span><span style="color: #990000">)</span> <span style="color: #990000">+</span> <span style="color: #993399">32</span><span style="color: #990000">;</span>
-<span style="font-weight: bold"><span style="color: #0000FF">return</span></span> msg<span style="color: #990000">;</span></tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="50%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>// convert Celsius to Farenheit</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>var newtemp = new int (msg.payload);</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>msg.payload= (newtemp * 1.8) + 32;</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>return msg;</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="paragraph"><p>C) Insert an rbe (report-by-exception) node to only pass on the message if the temperature has changed.</p></div>
+<div style="page-break-after:always"></div>
 <div style="page-break-after:always"></div>
 </div>
 </div>
@@ -2261,19 +2600,28 @@ Firmware to upload
 <div class="ulist"><ul>
 <li>
 <p>
-4 ESPEasy_R147_4096.bin
+0 ESPEasy_R147_4096.bin
 </p>
 </li>
 </ul></div>
 </li>
 </ul></div>
-<div class="listingblock">
-<div class="content"><!-- Generator: GNU source-highlight 3.1.6
-by Lorenzo Bettini
-http://www.lorenzobettini.it
-http://www.gnu.org/software/src-highlite -->
-<pre><tt>cd Downloads/arduinoimages/esp<span style="color: #993399">8266</span>-frameworks/espeasy
-<span style="color: #990000">.</span>/espeasyflash<span style="color: #990000">.</span>sh</tt></pre></div></div>
+<div class="tableblock">
+<table rules="none"
+width="100%"
+frame="border"
+cellspacing="0" cellpadding="4">
+<col width="100%" />
+<tbody>
+<tr>
+<td align="left" valign="top"><p class="table"><code>cd diyiot/Downloads/images/esp8266-frameworks/espeasy</code></p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p class="table"><code>./espeasyflash.sh</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="olist arabic"><ol class="arabic" start="6">
 <li>
 <p>
@@ -2966,7 +3314,141 @@ Note <em>'#</em>' is the wildcard for all topics
 </li>
 </ol></div>
 <div style="page-break-after:always"></div>
+<div style="page-break-after:always"></div>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lab_11_setup_esp8266_to_publish_to_mqtt_broker_and_configure_a_node_red_flow_to_subscribe_to_mqtt_and_upload_to_the_cloud">LAB 11 :: Setup ESP8266 to publish to MQTT broker, and configure a Node-RED flow to subscribe to MQTT and upload to the cloud</h2>
+<div class="sectionbody">
+<div class="olist arabic"><ol class="arabic" start="1">
+<li>
+<p>
+If you do not have an account at adafruit.io, you will need to use a web browser and go to <a href="https://io.adafruit.com/">https://io.adafruit.com/</a>.
+  Click on the &#8216;Get Started for Free&#8217; box on the top right of the screen. Enter the required info (Name, email, username, and password)
+  and click on &#8216;Create Account&#8217;
+</p>
+</li>
+<li>
+<p>
+If you did Lab 9, you can use that flow as a base for this one. Delete the email node, and go to Step 10 below.
+</p>
+</li>
+<li>
+<p>
+Reload the MQTT sketch from Lab 4 or the ESPEASY Framework from lab 10 into your ESP8266.
+</p>
+</li>
+<li>
+<p>
+On your Node-RED screen, click on the &#8216;+&#8217; button on the top right of the design screen to open another flow.
+</p>
+</li>
+<li>
+<p>
+Double-click on the flow name to bring up its edit window. Change the name to &#8216;Cloud-Test&#8217;.
+   Note that this is also where you would delete a flow that you no longer want. Click &#8216;Done&#8217;.
+</p>
+</li>
+<li>
+<p>
+Drag a mqtt node from the input list onto the design screen. Note that there is also a mqtt node in the output section,
+  which we do not want to use here.
+</p>
+</li>
+<li>
+<p>
+Double-click on the mqtt node to bring up the edit window. Since your mosquitto broker and Node-RED are running on the same system,
+  enter &#8216;localhost:1883&#8217; in the Server box.
+</p>
+</li>
+<li>
+<p>
+Enter the topic name you used from Lab 4 or Lab 10 in the Topic box.
+</p>
+</li>
+<li>
+<p>
+Change the QOS from 2 to 0.
+</p>
+</li>
+<li>
+<p>
+Change the name to &#8216;MQTT subscribe&#8217; and hit &#8216;Done&#8217;.
+</p>
+</li>
+<li>
+<p>
+Click and drag an mqtt output node from the &#8216;output&#8217; group. Note that you may have to scroll down to see this one.
+  Make sure you get the output node (connector on the left) and not the input node (connector on the right).
+</p>
+</li>
+<li>
+<p>
+Double-click the MQTT output node to bring up the edit window.
+</p>
+</li>
+<li>
+<p>
+Select &#8216;Add new mqtt-broker&#8217; in the Server drop-down. Click on the edit icon to the right to configure a new MQTT broker.
+</p>
+</li>
+<li>
+<p>
+Under the Connection tab enter <code>io.adafruit.com' in the `Server' box and `8883' in the 'Port' box.
+  Check the `Enable secure (SSL/TLS) connection box</code>.
+</p>
+</li>
+<li>
+<p>
+Select &#8216;Add new tls-config&#8217; in the TLS Configuration box, and the click the edit icon to the right. Enter the following paths:
+       Certificate - $HOME/node_modules/adafruit-io/node_modules/mqtt/examples/tls client/tls-cert.pem
+       Private Key - $HOME/node_modules/adafruit-io/node_modules/mqtt/examples/tls client/tls-key.pem
+       CA Certificate - $HOME/node_modules/adafruit-io/node_modules/mqtt/examples/tls server/crt.server1.pem
+</p>
+</li>
+<li>
+<p>
+Uncheck the <code>Verify server certificate box and enter a name (such as `My Cert') in the Name box.</code>
+</p>
+</li>
+<li>
+<p>
+Click the &#8216;Update&#8217; button on the top right and make sure your new name is chosen in the TLS Configuration box.
+  Click the &#8216;Add&#8217; button on the top right.
+</p>
+</li>
+<li>
+<p>
+Click on the <code>Security</code> tab to bring up the login screen.
+</p>
+</li>
+<li>
+<p>
+Enter your Adafruit username and password and click &#8216;Add&#8217;
+</p>
+</li>
+<li>
+<p>
+You should now be back in the MQTT node edit panel. Make sure io.adafruit.com:8883 is in the &#8216;Server&#8217; box; and
+  enter &lt;your adafruit login&gt;/feeds/IOTLab in the &#8216;Topic&#8217; and &#8216;Name&#8217; boxes. Click &#8216;Done&#8217; on the top right.
+</p>
+</li>
+<li>
+<p>
+Connect the new <em>MQTT out node</em> to your previous <em>MQTT in node</em> and DEPLOY.
+</p>
+</li>
+<li>
+<p>
+Log into your Adafruit account, and check for your Topic under Feeds.
+  Note that you could be getting one every 15 seconds, so if it is working you may want to unplug the ESP8266 after a few minutes,
+  or change the delay timer in your sketch.
+</p>
+</li>
+</ol></div>
+<div style="page-break-after:always"></div>
+<div style="page-break-after:always"></div>
 </div>
 </div>
 <div class="sect1">
@@ -2990,7 +3472,7 @@ This can be found online at <a href="https://www.arduino.cc/en/main/software">ht
 <div class="ulist"><ul>
 <li>
 <p>
-Version 1.8.1 was installed
+Version 1.8.5 was installed
 </p>
 </li>
 </ul></div>
@@ -3004,7 +3486,7 @@ The Arduino IDE has been configured to pick up the ESP8266 board definition by a
 <div class="ulist"><ul>
 <li>
 <p>
-<a href="http://esp8266.github.io/Arduino/versions/2.3.0/doc/installing.html">http://esp8266.github.io/Arduino/versions/2.3.0/doc/installing.html</a>
+<a href="http://arduino-esp8266.readthedocs.io/en/latest/installing.html#boards-manager">http://arduino-esp8266.readthedocs.io/en/latest/installing.html#boards-manager</a>
 </p>
 </li>
 </ul></div>
@@ -3019,11 +3501,6 @@ Arduino libraries and ESP8266 specific libraries have been installed
 In the Arduino IDE, Click on <em>Sketch&#8594;Include Libraries&#8594;Manage Libraries</em>
 </p>
 <div class="ulist"><ul>
-<li>
-<p>
-<a href="http://esp8266.github.io/Arduino/versions/2.3.0/doc/libraries.html">http://esp8266.github.io/Arduino/versions/2.3.0/doc/libraries.html</a>
-</p>
-</li>
 <li>
 <p>
 The following libraries have been installed:
@@ -3060,7 +3537,7 @@ ESP8266 Arduino reference doc
 <div class="ulist"><ul>
 <li>
 <p>
-<a href="http://esp8266.github.io/Arduino/versions/2.3.0/">http://esp8266.github.io/Arduino/versions/2.3.0/</a>
+<a href="http://arduino-esp8266.readthedocs.io/en/latest/">http://arduino-esp8266.readthedocs.io/en/latest/</a>
 </p>
 </li>
 </ul></div>
@@ -3152,7 +3629,7 @@ Diagram of the wiring of the Solderless Breadboard
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-04-29 14:30:31 CDT
+Last updated 2018-05-01 08:53:14 CDT
 </div>
 </div>
 </body>

@@ -59,6 +59,6 @@
 [start=2]
 . Compile and upload the sketch. Check your mosquitto_sub screen from Lab 3 to see that the sequential numbers have changed to temperatures.
 
-. Click on 'File->Save As'   to save this version
+. Click on 'File->Save As' and save as `lab4' in your Documents folder
 
 // vim: set syntax=asciidoc:
