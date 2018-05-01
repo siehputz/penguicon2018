@@ -117,8 +117,8 @@ SSID of ESP_0 ( this might be confusing if many do this at the same time)
 **** Name
 ***** <what ever you want>
 **** Delay  
-***** time in miliseconds
-***** 500 
+***** time in seconds
+***** 15 
 **** IDX/Var
 ***** 1  --  It is the first so 1 is good
 **** 1st GPIO
