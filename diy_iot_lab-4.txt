@@ -16,7 +16,7 @@
 **  Initialization of the DHT 
 *** Add to setup(); the following code 
 
-[width="50%", cols="m"]
+[width="50%", cols="m", grid="none"]
 |==============================================
 | dht.begin();
 |==============================================
@@ -24,7 +24,7 @@
 ** Add the read from the DHT to loop(); 
 ** Above the comment line in the loop() that follows 
 
-[width="50%", cols="m"]
+[width="50%", cols="m", grid="none"]
 |==============================================
 | // Now we can publish stuff!”
 |==============================================
@@ -44,14 +44,14 @@
 
 ** from
 
-[width="50%", cols="m"]
+[width="50%", cols="m", grid="none"]
 |==============================================
 | if (! photocell.publish(x++)) {
 |==============================================
 
 ** to
 
-[width="50%", cols="m"]
+[width="50%", cols="m", grid="none"]
 |==============================================
 | if (! temp.publish(f)) { 
 |==============================================
