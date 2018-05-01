@@ -5,8 +5,8 @@
 . If you do not have an account at adafruit.io, you will need to use a web browser and go to https://io.adafruit.com/. 
   Click on the `Get Started for Free' box on the top right of the screen. Enter the required info (Name, email, username, and password) 
   and click on `Create Account'
-. If you did Lab 9, you can use that flow as a base for this one. Delete the email node, and go to Step 10 below.
 . Reload the MQTT sketch from Lab 4 or the ESPEASY Framework from lab 10 into your ESP8266.
+. If you did Lab 9, you can use that flow as a base for this one. Delete the email node, and go to Step 11 below.
 . On your Node-RED screen, click on the `+' button on the top right of the design screen to open another flow.
 . Double-click on the flow name to bring up its edit window. Change the name to `Cloud-Test'. 
    Note that this is also where you would delete a flow that you no longer want. Click `Done'.
