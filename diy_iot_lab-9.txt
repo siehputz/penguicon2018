@@ -2,17 +2,18 @@
 == LAB 9 :: Setup ESP8266 to publish to MQTT broker, and configure a Node-RED flow to subscribe to MQTT and send email 
 
 [start=1]
-. If you are not using ESPEasy, reload the MQTT sketch from Lab 4 into your ESP8266. If you are using ESPEasy, just go to lab 2.
-. To start Node-RED 
-* In a terminal window type 
-** node node_modules/node-red/red  
+. If you are not using ESPEasy, reload the MQTT sketch from Lab 4 into your ESP8266. If you are using ESPEasy, just go to line 2.
+//. To start Node-RED 
+//* In a terminal window type 
+//** node node_modules/node-red/red  
 * Using a browser 
 ** go to "http://127.0.0.1:1880/" to navigate to the Node-RED screen
+*** If Node-RED is not running see the begining of lab 8 
 . On your Node-RED screen, click on the “+” button on the top right of the design screen to open another flow.
 . Double-click on the "flow name" to bring up its edit window. Change the name to “MQTT-Test”. Note that this is also where you would delete a flow that you no longer want. Click “Done”.
 . Drag a "mqtt node" from the input list onto the workspace screen. Note that there is also a mqtt node in the output section, which we do not want to use here.
 . Double-click on the "mqtt node" to bring up the edit window. 
-* Since your mosquitto broker and Node-RED are running on the same system, enter “localhost:1883” in the "Server box".
+* Since your mosquitto broker and Node-RED are running on the same system, click on the edit icon and enter a servername of `localhost'; then click `Add'.
 . Enter the topic name you used from Lab 3 in the "Topic box".
 . Change the "QOS" from 2 to 0.
 . Change the "name" to “MQTT subscribe” and hit “Done”.

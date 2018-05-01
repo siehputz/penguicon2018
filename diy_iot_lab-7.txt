@@ -61,5 +61,6 @@
 . Compile and upload the sketch.
 . Using a smartphone or tablet or lab station connect to the wifi network with the SSID and password you created. 
 . Enter the IP address followed by “/temp” in the URL bar. This should return your web page with the data from the DHT displayed.
+. Click on 'Save As' and save this as `lab7' in your Documents directory
 
 // vim: set syntax=asciidoc:

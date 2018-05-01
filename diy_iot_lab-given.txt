@@ -26,10 +26,11 @@
 **** The + pin of the DHT11 goes to 3v3
 **** The – pin of the DHT11 goes to GND
 **** The OUT pin of the DHT11 goes to D5
-*** Frizing diagram of the ESP8226 lab hardware 
 
-image:/home/siehputz/Downloads/diyiot/images/nodemcu-diy-iot_bb.jpg[Fritzing Diagram of lab ESP8266]
+image:images/nodemcu-diy-iot_fritzing.png[Fritzing Diagram of lab ESP8266]
 
-*** Diagram of the wiring of the Solderless Breadboard 
+image:images/basic_breadboard_layout.png[Solderless Breadboard Wiring]
 
-image:/home/siehputz/Downloads/diyiot/images/basic_breadboard_layout.png[Solderless Breadboard Wiring]]
+image:images/Arduino-IDE-illustration.png[Arduino IDE Illustration]
+
+image:images/Node-red-illustration.png[Node Red Illustration]
