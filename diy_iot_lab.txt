@@ -4,11 +4,13 @@ Author    Dave Putz <dwputz@gmail.com>
 
 Author    Connie Sieh <cjsieh@gmail.com>
 
+License 
+        http://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International License]  
+
 *Your  Station Name ____________*
 
 include::diy_iot_lab-infrastructure.txt[]
 
-<<<
 == DIY IOT Lab Outline 
 
 //[horizontal]
@@ -36,11 +38,11 @@ LAB 11 :: Configure a Node-Red flow to subscribe to a MQTT broker and publish to
 .Which labs go with each track
 [width="50%",options="header"]
 |==============================================
-| From the beginning | No Programming  | Advanced
+| From the beginning | No Programming  | Been Here Before 
 | Lab 1 | Lab 1 | Lab 1
 | Lab 2 | Lab 10 | Lab 4
-| Lab 3 | Lab 8 | Lab 11
-| Lab 4 | Lab 9 |
+| Lab 3 | Lab 8 | Lab 9 (With options) 
+| Lab 4 | Lab 9 | Lab 11
 | Lab 5 | Lab 11 |
 | Lab 6 |  |
 | Lab 7 |  |
@@ -48,18 +50,29 @@ LAB 11 :: Configure a Node-Red flow to subscribe to a MQTT broker and publish to
 | Lab 9 |  |
 | Lab 11 |  |
 |==============================================
-
+<<<
 include::diy_iot_lab-1.txt[]
+<<<
 include::diy_iot_lab-2.txt[]
+<<<
 include::diy_iot_lab-3.txt[]
+<<<
 include::diy_iot_lab-4.txt[]
+<<<
 include::diy_iot_lab-5.txt[]
+<<<
 include::diy_iot_lab-6.txt[]
+<<<
 include::diy_iot_lab-7.txt[]
+<<<
 include::diy_iot_lab-8.txt[]
+<<<
 include::diy_iot_lab-9.txt[]
+<<<
 include::diy_iot_lab-10.txt[]
+<<<
 include::diy_iot_lab-11.txt[]
+<<<
 include::diy_iot_lab-given.txt[]
 
 // vim: set syntax=asciidoc:
