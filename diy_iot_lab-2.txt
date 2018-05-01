@@ -71,3 +71,6 @@ NOTE: The DHT11 sensor is connected to GPIO(General Purpuse IO) pin D5
 **  You should see the temperature and humidity readings being displayed. Note that the Serial.print() functions in your program will always display to this monitor window.
 .  Try holding the sensor in your hand and/or blowing on it to see the readings change. Be careful not to detach any wires when doing this.
 . Click on 'File->Save As' and save it as `lab2' in your Documents folder to save this version
+
+// vim: set syntax=asciidoc:
+
