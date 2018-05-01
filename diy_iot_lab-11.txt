@@ -31,7 +31,7 @@
 . Click the `Update' button on the top right and make sure your new name is chosen in the TLS Configuration box. 
   Click the `Add' button on the top right.
 . Click on the `Security` tab to bring up the login screen.
-. Enter your Adafruit username and password and click `Add'
+. Enter your Adafruit username and AIO key and click `Add'
 . You should now be back in the MQTT node edit panel. Make sure io.adafruit.com:8883 is in the `Server' box; and 
   enter <your adafruit login>/feeds/IOTLab in the `Topic' and `Name' boxes. Click `Done' on the top right.
 . Connect the new 'MQTT out node' to your previous 'MQTT in node' and DEPLOY.
